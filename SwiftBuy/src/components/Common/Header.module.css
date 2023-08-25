@@ -4,7 +4,7 @@
 
 
 .navbar {
-    background-color: #ffcad4;
+    background-color: #f4acb7;
     width: 100vw;
     position: fixed;
     overflow: hidden;
@@ -20,13 +20,5 @@
     margin: 0.5rem;
     font-weight: bold;
     color: #fcf6bd;
-}
-
-.actionContainer {
-    margin-right: 1rem;
-}
-
-.cartBtn {
-    max-width: 8rem;
-    padding: 1rem 1.5rem;
+    margin-left: 2rem;
 }

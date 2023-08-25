@@ -1,0 +1,153 @@
+
+.actionContainer {
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.cartBtn {
+    display: flex;
+    align-items: center;
+    max-width: 18rem;
+    padding: 1rem 4rem;
+    background-color: transparent;
+    border: 2px solid #33ffc2;
+    transition: background-color 10s ease-in color 0.3s ease-in;
+}
+
+.cartTxt {
+    margin-right: 0.8rem;
+    color: #33ffc2;
+    font-size: 1.5rem;
+}
+
+.cartBtn:hover {
+    background-color:#33ffc2;
+    /* animation: gradientPulse 3s cubic-bezier(0.445, 0.05, 0.55, 0.95); */
+    color: #fcf6bd;
+}
+
+.cartBtn:hover .cartTxt {
+    color: #fcf6bd;
+}
+
+
+.badge {
+    background-color: #33ffc2;
+    padding: 0rem 1rem;
+    padding-top: 0.15rem;
+    border-radius: 2rem;
+}
+
+.badgeNum {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.cartBtn:hover .badge {
+    background-color: #fcf6bd;
+}
+
+.cartBtn:hover .badgeNum {
+    color: #33ffc2;
+}
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+    .actionContainer {
+        display: block;
+    }
+    .cartBtn {
+        display: block;
+        width: 8rem;
+        padding: 1rem 2rem;
+    }
+
+    .cartTxt {
+        margin-right: 0;
+        font-size: 1rem;
+    }
+
+    .badge {
+        position: absolute;
+        top: 1.6rem;      
+        right: 2.6rem;
+        padding: 0 2px;
+        padding-top: 2px;
+    }
+    .badgeNum {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cartBtn {
+        width: 7rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .cartTxt {
+        margin-right: 0;
+        font-size: 1rem;
+    }
+    
+    .badge {
+        position: absolute;
+        top: 1.8rem;      
+        right: 2.4rem;
+        padding: 0 1px;
+        padding-top: 1px;
+    }
+
+    .badgeNum {
+        font-size: 0.8rem;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+    
+}
+
+@keyframes rgbPulse {
+    0% {
+      background-color: rgb(255, 0, 0);
+    }
+    25% {
+      background-color: rgb(0, 255, 0);
+    }
+    50% {
+      background-color: rgb(0, 0, 255);
+    }
+    75% {
+      background-color: rgb(255, 255, 0);
+    }
+    100% {
+      background-color: rgb(255, 0, 0);
+    }
+  }
+
+  @keyframes gradientPulse {
+    0%, 100% {
+        background: linear-gradient(45deg, rgb(255, 0, 0), rgb(0, 255, 0));
+      }
+      20% {
+        background: linear-gradient(45deg, rgb(0, 255, 0), rgb(0, 0, 255));
+      }
+      40% {
+        background: linear-gradient(45deg, rgb(0, 0, 255), rgb(255, 0, 0));
+      }
+      60% {
+        background: linear-gradient(45deg, rgb(255, 0, 0), rgb(255, 255, 0));
+      }
+      80% {
+        background: linear-gradient(45deg, rgb(255, 255, 0), rgb(0, 255, 0));
+      }
+  }
